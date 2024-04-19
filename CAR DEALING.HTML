@@ -1,0 +1,579 @@
+ <!DOCTYPE html>
+<head>
+    <title>CAR DEALERS WEBSITE</title>
+	<link src="//kit.fontawesome.com/495e8f7899.js"
+	crossorigin="anonymous"
+	></link>
+
+	<STYLE>
+
+		.wrapper{
+			flex: 1;
+		min-height: 110vh;
+		background: rgba(39, 39, 39, 0.4);
+	}
+		
+		.buy-button:hover{
+		opacity:0.9;
+		transition:0.4s;
+		color:gray;}
+	
+	.buy-button:active{
+		opacity:0.8;
+		color:white;
+	}
+	.nav1{
+		display: flex;
+		flex-direction: row;
+		padding-top:20px;
+		font-family: 'Courier New', Courier, monospace;
+		background-image: url(kia4.jpg);
+		background-size: cover; 
+		background-repeat: no-repeat; 
+		background-attachment: fixed;
+		text-align: center; 
+	}
+	
+	.nav2{
+		DISPLAY:FLEX; FLEX-DIRECTION:ROW;
+		background-color:white;
+		font-size:15px;  
+		font-weight:bold;
+	}
+	.intro{
+		FLEX:1;
+		 padding-top:20px;
+		 font-family: 'Courier New', Courier, monospace;
+		 background-image: url(kia4.jpg);
+		 width: 100%;
+		 background-size: cover; padding-left: 160px;
+		background-repeat: no-repeat; padding-top: 50px;
+		background-attachment: fixed;
+		text-align: center; 
+	}
+	.stext{
+		font-size:15px;
+		 color:white;
+		margin-right: 0px;
+	}
+	.btext{
+		font-size: 28px; 
+		padding-left: 90PX; 
+		  font-weight:1000; color: rgba(255, 187, 0, 0.973);
+		   letter-spacing:0px;
+	}
+	.link{
+		flex:1;
+		font-family: 'Courier New', Courier, monospace; padding-left:100px ;
+		color:black;
+		cursor:pointer;
+	}
+	.links{
+		flex:1;
+		font-family: 'Courier New', Courier, monospace;
+		color:black; padding-left: 100px;
+	}
+	.introduction{
+		background-image: url(kia2.jpg);
+		margin-bottom:5px; 
+		margin-top:5px; font-size:25PX;
+		background-size: cover; 
+		padding-left: 160px;
+		background-repeat: no-repeat; 
+		padding-top: 50px;
+		background-attachment: fixed;
+		text-align: left; color: white;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: bold;
+		height: 500px;
+	
+	}
+	.buy-button{
+		cursor:POINTER;
+		background-color:rgba(255, 187, 0, 0.973);
+		color:black;
+		border-radius:16px;
+		min-width: 100%;
+		max-width: 100%;
+	}
+	.carsale{
+		align-self: center;
+		padding-left: 5px;
+		display: flex;
+		flex-direction: row;
+	}
+	.car{
+		background-color:bisque;
+		box-shadow: 5px;
+		padding:5PX;	
+		border-radius:8px;
+	
+	}
+	
+	.learn-button:hover{
+		opacity:0.9;
+		transition:0.4s;
+		box-shadow:5px 5px 2px black;
+		color:gray;
+	}
+	.learn-button:active{
+		opacity:0.8;
+		color:white;
+	}
+	.learn-button{
+		cursor:pointer;
+		background-color:rgba(255, 187, 0, 0.973);
+		color:white;
+		border-radius:16px;
+	}
+	.option-button{
+		background-color:rgba(255, 187, 0, 0.973);
+		color:white;
+		font-size:18px; 
+		height:30px; 
+		width:100%;
+		border-radius:10px;
+		font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		cursor:POINTER;
+	}
+		.option-button:hover{
+		opacity:0.9;
+		transition:0.4s;
+		box-shadow:5px 5px 2px ;
+		color:gray;
+	}
+	.option-button:active{
+		opacity:0.8;
+		color:white;  
+	}
+	.join-button{
+			background-color:white; 
+			border-color:blue;
+			border-style:solid;
+			border-width:1px;
+			color:blue;
+			height:36px;
+			width:62px;
+			border-radius:2px;
+			cursor:pointer;
+			margin-left:10px;
+			transition:2S;
+	 }
+	 .join-button:hover{
+			background-color:blue; 
+			color:white;
+	 }
+	 .join-button:active{
+			opacity:0.7;
+	 }
+	 .links.links ul a{
+			 display:block;
+			 margin-bottom:10px;
+			 font-size:1.2em;
+			 list-style-type: none;
+		}
+		.links.links ul a:hover{
+			 color:RGB(174,131,131);
+			 margin-left:15px;
+			 Transition:0.3s;
+		}
+		.cars{
+		flex:1;
+		font-family: 'Courier New', Courier, monospace; 
+		padding-left: 120px ;
+		color:black; 
+		cursor: pointer; 
+	 }
+	 .cars a{
+		list-style-type: none;
+	 }
+	 .cars :hover{
+		font-size: 17px;
+		color:yellow
+	 }
+	 .header{
+		display:block; font-size:25PX;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align:center;
+	text-decoration: wavy;
+	 }
+	 /*meda codes*/
+	 @media screen and (max-width: 700px) {
+	 .link{
+		font-size: 10px;
+		font-family: 'Times New Roman', Times, serif;
+		padding-left: 10px;
+	 }
+	 .links{
+		padding-left: 40px;
+	 }
+	 .introduction{
+		background-image: url(kia3.jpg);
+		font-size: 17px;
+		background-position: initial;
+		background-attachment: scroll;
+		height:700px;
+	 }
+	 .btext{
+		font-size: 20px;
+		padding-left: 31px;
+	 }
+	 .header{
+		font-size: 13px;
+	 }
+	 
+	 .carsale{
+		flex-direction: column;
+	 }
+	}
+	
+	</STYLE>
+	
+	
+	
+</head>
+<body>
+	<nav class="nav1" 
+	>
+	  <b class="btext"> GOD's OWN</b>
+	  <b class="stext"> AUTO-TRONICS</b>
+  <b class="btext" > FAST DEVELOPING</b>
+  <b class="stext"> Automobile  shop</b>
+	</nav>
+
+	
+<nav class="nav2" >
+<div class="links" class="cars">
+<a class="link"  href="KIA CAR.html">KIA CARS</a>
+<a class="link"  href="CHEVROLETTE.HTML">CHEVROLETTE CARS</a>
+<a class="link"  href="BENZ DEALING.HTML">BENZ CARS</a>
+<a class="link"  href="BETLY.HTML">BETLY CARS</a>
+<a class="link"  href="truck1.jpg">HEAVY DUTY</a>
+</div>
+</nav>
+
+<section class="wrapper">
+<div class="introduction" 
+><i style="font-size:10px ;"><u style="color:rgba(255, 187, 0, 0.973);">The best automobile 
+	and electronic seller</u></i>
+<br>GOD'S OWN MOTORS</br>
+<br> THE ONLY ADVANCED</br>
+<br> SOLUTIONS</br>
+<br> FOR AUTOMOBILE</br>
+<BUTTON a href="|"CLASS="learn-button">LEARN MORE</BUTTON>
+</div>
+</section>
+
+
+
+
+
+<header class="header"><B><U>AVAILABLE CARS</U></B>
+</header>
+
+
+
+<section CLASS="carsale">
+	<div style="padding:10px; padding-left:5px; flex: 1;">	
+	<div class="car"style="">
+<img style="height:140px;" src="kia1.jpg"></img>
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-KIA LATI</P>SPEED-120KM/HR<p>COLOR-SKY-WHITE</p>
+</span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+</div></div>
+	
+<div style="padding:10px; padding-left:10px;">
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev5.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE</P>SPEED-110KM/HR<p>COLOR-WHITE</p>
+</span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>		
+</div></div>
+
+<div style="padding:10px; padding-left:10px;">
+<div class="car"style="flex:1;">
+<img style="height:140px; " src="kia1.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-KIA PRETE</P>SPEED-150KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+					</div></div>
+<div style="padding:10px; padding-left:10px;">					
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev2.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE</P>SPEED-90KM/HR<p>COLOR-YELLOW</p></span></div>
+
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+							</div></div>
+<div style="padding:10px; padding-left:10px;">							
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev4.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE</P>SPEED-250KM/HR<p>COLOR-ARTIC-WHITE</p></span></div>
+
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+					</div></div>					
+</section>
+<br></br>
+
+
+<section CLASS="carsale">
+	<div style="padding:20px; padding-left:30px; ">	
+	<div class="car"style="flex:1;">
+<img style="height:140px;" src="toyota3.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><p>BRAND-KIA MATA</p>SPEED-300KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+	</div></div>
+	
+<div style="padding:10px; padding-left:40px;">
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev5.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE</P>SPEED-350KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>		
+			</div>
+</div>
+<div style="padding:10px; padding-left:40px;">
+<div class="car"style="flex:1;">
+<img style="height:140px; " src="truck1.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-GATES TYRES</P>SPEED-101KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+					</div></div>
+<div style="padding:10px; padding-left:40px;">					
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="toyota 2.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-TOYOTA</P>SPEED-410KM/HR<p>COLOR-YELLOW</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+							</div></div>
+<div style="padding:10px; padding-left:40px;">							
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev4.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE</P>SPEED-190KM/HR<p>COLOR-ARTIC-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+					</div></div>					
+</section>
+
+
+<section class="carsale">
+	<div style="flex:1; padding:10PX;">
+		<img src="advert1.png" alt="unable to load" 
+		style="height:300px; width:100%">			
+				</div>
+
+    <div style="flex:1; padding:10PX;">
+	    <img src="advert1.png" alt="unable to load" 
+		style="height:300px; width:100%">			
+				</div>			
+
+	<div style="flex:1; padding:10PX;">
+		<img src="advert1.png" alt="unable to load" 
+		style="height:300px; width:100%">			
+				</div>	
+</section>
+
+
+
+<section CLASS="carsale" >
+	<div style="padding:20px; padding-left:20px; ">	
+	<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev4.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><p>BRAND-CHEVROLETTE HALIDA</p>SPEED-300KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+	</div></div>
+	
+<div style="padding:10px; padding-left:30px;">
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev5.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE LOTON</P>SPEED-350KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>		
+			</div>
+</div>
+<div style="padding:10px; padding-left:30px;">
+<div class="car"style="flex:1;">
+<img style="height:140px; " src="chev2.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE GANTINA</P>SPEED-101KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+					</div></div>
+<div style="padding:10px; padding-left:30px;">					
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev2.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE DANIDI</P>SPEED-410KM/HR<p>COLOR-YELLOW</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+							</div></div>
+<div style="padding:10px; padding-left:30px;">							
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev4.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE COMTOMORE </P>SPEED-190KM/HR<p>COLOR-ARTIC-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+					</div></div>					
+</section>
+			
+				
+
+<section CLASS="carsale">
+	<div style="padding:20px; padding-left:40px; ">	
+	<div class="car"style="flex:1;">
+<img style="height:140px;" src="toyota3.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><p>BRAND-KIA MATA</p>SPEED-300KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+	</div></div>
+	
+<div style="padding:10px; padding-left:40px;">
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev5.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE</P>SPEED-350KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>		
+			</div>
+</div>
+<div style="padding:10px; padding-left:40px;">
+<div class="car"style="flex:1;">
+<img style="height:140px; " src="kia4.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-GATES TYRES</P>SPEED-101KM/HR<p>COLOR-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+					</div></div>
+<div style="padding:10px; padding-left:40px;">					
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="toyota 2.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-TOYOTA</P>SPEED-410KM/HR<p>COLOR-YELLOW</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+							</div></div>
+<div style="padding:10px; padding-left:40px;">							
+<div class="car"style="flex:1;">
+<img style="height:140px;" src="chev4.jpg"></img>
+
+<div style="font-size:13px;font-weight:bold; text-align:center; color:gray; 
+ font-family: 'Courier New', Courier, monospace;">
+ <span><P>BRAND-CHEVROLETTE</P>SPEED-190KM/HR<p>COLOR-ARTIC-WHITE</p></span></div>
+
+<br><button CLASS=" buy-button"> BUY NOW</button></br>
+					</div></div>					
+</section>
+			
+		</a>
+</body>
+<hr></hr>
+  
+  <footer style="display :flex;
+              background-color:black;
+			  height:300px;
+   ">
+  <div style="flex:1;
+              color:RGB(232,222,222);
+			  padding-left:17px;
+              ">
+			  
+  <h1><b><span style="color:rgba(255, 187, 0, 0.973);">GOD'S</span> </b>OWN MOTORS</h1>
+  <p style=" font-size:19px;">ONLY ADVANCED
+<br>
+<br>INNOVATIVE SOLUTIONS </p>
+<div>FOR AUTOMOBILES</div>
+  </div>
+
+  
+  <div  class="links"  style=" flex:1;
+	    padding-left:0px;
+		color: rgba(255, 187, 0, 0.973);
+	">
+	<h2>QUICK LINKS</h2>
+	<ul style=" list-style-type: none;">
+	<a href="CAR DEALING.HTML"><li style="color: #ffffff; list-style-type: none;">home</li></a>
+	<a href="about car.html"><li  style="color: white; list-style-type: none;">about</li></a>
+	<a href="car blog.html"><li  style="color: white; list-style-type: none;">blog</li></a>
+	<a href="partnership.html"><li  style="color: white; list-style-type: none;">partnership application</li></a>
+	</ul>
+ 
+  </div>
+ 
+<div style=" flex:1;
+             color:rgba(255, 187, 0, 0.973);
+">
+ <h2><b>CONTACT US</b><h2>
+	<form class="EMAIL" 
+  action="https://formsubmit.co/akinrinaded7@email.com">
+<input  height="19px"type="email" 
+placeholder="write your e-mail adress...."></input>
+</br>
+<textArea type="text" name="text"
+ placeholder="write your message here" >
+</textArea>
+</br>
+<button type="submit" value="submit" class="join-button" 
+name="submit" placeholder="send">send</button>
+</form>
+  </div>
+  </div> 
+		
+  </footer>	 
+
+ 

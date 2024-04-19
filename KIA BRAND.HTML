@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" media="mediatype and|not|only (expressions)
+    content="width=device-width, initial-scale=1.0">
+    <title>KIA CAR EACH</title>
+
+    <style>
+        * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with
+ a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* email design */
+.email{
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-color:rgba(255, 187, 0, 0.973);
+
+}
+.EMAIL{
+    text-align: center;
+
+}
+/* submit button design */
+.learn-button:hover{
+	opacity:0.9;
+	transition:0.4s;
+	box-shadow:5px 5px 2px;
+	color:gray;
+}
+.learn-button:active{
+	opacity:0.8;
+	color:white;
+}
+.learn-button{
+	cursor:pointer;
+	background-color:rgba(255, 187, 0, 0.973);
+	color:white;
+	border-radius:16px;}
+    /* text design */
+    .bon{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .con{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@media screen and (min-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+    </style>
+</head>
+<body>
+    
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="kia1.jpg" style="width:100%">
+      <div class="text">EXTERNAL VIEW</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="kia1.jpg" style="width:100%">
+      <div class="text">INTERIOR VIEW</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="kia1.jpg" style="width:100%">
+      <div class="text">ENGINE VIEW</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+<BR></BR>
+
+  <DIV style="display:flex; flex-direction:row;">
+    <div class="bon">
+  <div CLASS="bon" >
+      <div class="con">
+        <b> NECESSARY INFORMATION ABOUT YOUR ORDER</b><br>
+     <span> BRAND--------------KIA</span><br>
+     <span> MODEL--------------J33.8</span><br>
+     <span> COLOR--------------BLUE</span><br>
+     <span> SPEED--------------3000KM/HR</span>
+     <br>
+     <BR></BR>
+     <b>FILL IN THE FOLLOWING INFORMATION TO PLACE AN ORDER</b>
+      </div>
+  </div>
+  <form class="EMAIL" 
+  action="https://formsubmit.co/akinrinaded7@email.com"
+   method="post">
+      <label type="text" name="name">input your name </label>
+      <input class="email" type="name"  name="name" 
+      placeholder=" input Your name ..">
+     <br>
+     <br></br>
+      <label for="lname">Email</label>
+      <input class="email" type="email"  name="email" 
+      placeholder="Your email..">
+     <br>
+     <br></br>
+
+      <label for="message">ADDRESS</label>
+      <textarea class="email" name="message" 
+       placeholder="DELIVERY ADDRESS PREFERRED.."
+       style="height:200px"></textarea>
+       <br></br>
+
+      <input class="learn-button" type="submit" 
+      value="Submit">
+    </form>
+    </div>
+  
+    <div STYLE="FLEX:1; margin-left:10px; text-align:center;">
+     <B> PAYMENT INFORMATION</B><BR>
+     ALL PAYMENT FOR THIS PRODUCT SHOULD BE FORWARDED<BR> TO
+     THE ACCOUNT BELOW AT THE POINT OF SUCESSSFUL DELIVERY 
+     <BR>OF YOUR PRODUCT</BR>
+     <br>
+     <b><SPAN> ACCOUNT DETAILS</SPAN></b><BR>
+     <B><a>GOD'S OWN AUTO-TRONICS ----- 0011236863375</a></B>
+     <BR><a>NAME OF BANK-----------WEMA BANK PLC</a></BR>
+     <BR><B>NOTE ON THIS PRODUCT:</B></BR> 1. ONLY 14 DAYS WARRANTY ON THIS PRODUCT
+    <P> 2. THIS PRODUCT  WAS WELL TESTED, APPROVED AND TRUSTED </P>
+    <P> 3. THIS PRODUCT WILL BE OUT FOR DELIVERY 7 DAYS AFTER YOUR ORDER</P>
+    <BR><B>NOTE ON POINT OF DELIVERY</B>
+    <P> 1. BRIEF CONVERSATION WITH OUR DELIVERY AGENT IS NECESSARY</P>
+    <P> 2. PAYMENT IS MADE ON THE POINT OF DELIVERY AND PAYMENT WILL BE CONFIRMED BEFORE 
+     YOU ARE GIVEN THE NEECESSARY DOCUMENT OF THE ORDER </P>
+    <P> 3. YOU WILL BEE UPDATED ON YOUR DELIVERY DATE THROUGH 
+      THE E-MAIL ADDRESS YOU PROVIDED OR YOU CAN
+       CONTACT OUR CUSTOMER CARE LINE BELOW </P>
+      <P>4. FAILURE TO PAY AT POINT OF DELIVERY WILL ATTRACT SOME 
+      PENALTY </P>
+    </div>
+  </DIV>
+  <hr></hr>
+  
+</body>
+<div style="text-align:center;"><p>SCAN TO CONTACT OUR  CUSTOMER SERVICE:</p>
+<img style=" height:300px;" SRC="qr code.png"></img>
+<p>whatsapp:<a href="http://whatsapps/07039067990?text=">click 
+  to connect</a></p>
+  <P>CUSTOMER CARE LINE:{07039067990}</P>
+
+</div>
+
+</html>
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
